@@ -1,0 +1,11 @@
+// imports
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+:root{
+    --bs-body-font-family:'Montserrat Alternates', sans-serif;
+}
+@import "_vars";
+@import "_mixins";
+@import "commons";
+@import "_nav";
+@import "breakpoints";
