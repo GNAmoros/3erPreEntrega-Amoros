@@ -13,21 +13,21 @@
 
 // maps
 $palette:(
-    '1st': rgb(192,130,167),
-    '2nd': rgb(164,120,149),
-    '3rd': rgb(241,193,207),
-    '4th': rgb(243,233,241),
+    'one': rgb(192,130,167),
+    'two': rgb(164,120,149),
+    'three': rgb(241,193,207),
+    'four': rgb(243,233,241),
 );
 
 .bg-rosy{
-    background-color: map-get($map: $palette, $key: 1st);
+    background-color: map-get($map: $palette, $key: one)
 }
 .bg-rosyd{
-    background-color: map-get($map: $palette, $key: 2nd);
+    background-color: map-get($map: $palette, $key: two);
 }
 .bg-thistle{
-    background-color: map-get($map: $palette, $key: 3rd);
+    background-color: map-get($map: $palette, $key: three);
 }
 .bg-lav{
-    background-color: map-get($map: $palette, $key: 4th);
+    background-color: map-get($map: $palette, $key: four);
 }
