@@ -1,4 +1,6 @@
-h1{
+header{
+    background-image: url(../img/header.webp);
+    h1{
     font-family: $mainFont;
     font-size: $txtlg;
     position:relative; 
@@ -6,11 +8,10 @@ h1{
     left: 25%;
     
 }
-
+}
 p{
     font-size: $txtsm;
     font-family: $sndFont;
-    
 }
 
 body{
@@ -76,6 +77,8 @@ body{
                 padding: 1rem;
                 border-radius: 5px;
                 font-family: 'Roboto', sans-serif;
+                margin: 2rem;
+                width: 50%;
         }
     }
     }
@@ -87,3 +90,6 @@ body{
     }
     }
     
+    .infoPages{
+        @include flex(column ,wrap ,end ,center )
+    }

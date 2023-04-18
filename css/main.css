@@ -4,23 +4,26 @@
   --bs-body-font-family:"Montserrat Alternates", sans-serif;
 }
 
-.bg-rosy {
+.one {
   background-color: rgb(192, 130, 167);
 }
 
-.bg-rosyd {
+.two {
   background-color: rgb(164, 120, 149);
 }
 
-.bg-thistle {
+.three {
   background-color: rgb(241, 193, 207);
 }
 
-.bg-lav {
+.four {
   background-color: rgb(243, 233, 241);
 }
 
-h1 {
+header {
+  background-image: url(../img/header.webp);
+}
+header h1 {
   font-family: "Satisfy", cursive;
   font-size: 7em;
   position: relative;
@@ -45,7 +48,7 @@ body div nav ul li {
 }
 body div nav ul li::after {
   content: "";
-  background-color: blueviolet;
+  background-color: rgb(243,233,241);
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -57,9 +60,10 @@ body div nav ul li::after {
   opacity: 0;
   transition: top 0.5, opacity 0.5s;
 }
-body div nav ul li:hover {
-  color: #fff;
+body div nav ul li:hover{
+  background-color:rgb(192,130,167);
 }
+
 body div nav ul li:hover::after {
   top: 50%;
   opacity: 1;
@@ -89,10 +93,109 @@ body main section form {
   padding: 1rem;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
+  margin: 2rem;
+  width: 50%;
 }
 body footer {
   background-color: rgb(192, 130, 167);
   padding-top: 5px;
+}
+.infoPages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+.aesCarous {
+  grid-area: caro;
+}
+
+.aesSettings {
+  margin: 3rem;
+}
+
+.obsMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.obsImg {
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.obsIntro {
+  width: 20rem;
+  margin: 6%;
+}
+
+.contactSettings {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.contactHeading {
+  order: 1;
+  width: 100%;
+}
+
+.contactLegend {
+  text-align: center;
+  margin: 15px 5px;
+}
+
+.contactInfo {
+  order: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: outset 2px rgb(164, 120, 149);
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contactInput {
+  background-color: rgb(214, 193, 207);
+}
+
+.contactInput:hover {
+  background-color: rgb(164, 120, 149);
+}
+
+.contactForm input {
+  border-radius: 5px;
+}
+
+.contactMap {
+  margin: 5px;
+}
+
+iframe {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.contactDetail {
+  order: 3;
+  text-align: center;
+  height: 4em;
+  padding: 1em;
+  font-size: 15px;
+  background-color: rgb(243, 233, 241);
 }
 
 /*# sourceMappingURL=main.css.map */

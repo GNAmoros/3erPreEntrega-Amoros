@@ -12,22 +12,15 @@
 // }
 
 // maps
-$palette:(
+$palettes:(
     'one': rgb(192,130,167),
     'two': rgb(164,120,149),
     'three': rgb(241,193,207),
     'four': rgb(243,233,241),
 );
 
-.bg-rosy{
-    background-color: map-get($map: $palette, $key: one)
+@each $palette, $value in $palettes{
+    .#{$palette}{background-color: #{$value};
 }
-.bg-rosyd{
-    background-color: map-get($map: $palette, $key: two);
-}
-.bg-thistle{
-    background-color: map-get($map: $palette, $key: three);
-}
-.bg-lav{
-    background-color: map-get($map: $palette, $key: four);
+
 }
