@@ -4,6 +4,10 @@
   --bs-body-font-family:"Montserrat Alternates", sans-serif;
 }
 
+.flui {
+  padding: 0px !important;
+}
+
 .one {
   background-color: rgb(192, 130, 167);
 }
@@ -48,7 +52,7 @@ body div nav ul li {
 }
 body div nav ul li::after {
   content: "";
-  background-color: rgb(243,233,241);
+  background-color: rgb(243, 233, 241);
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -60,10 +64,9 @@ body div nav ul li::after {
   opacity: 0;
   transition: top 0.5, opacity 0.5s;
 }
-body div nav ul li:hover{
-  background-color:rgb(192,130,167);
+body div nav ul li:hover {
+  color: #fff;
 }
-
 body div nav ul li:hover::after {
   top: 50%;
   opacity: 1;
@@ -116,14 +119,35 @@ body footer {
   margin: 3rem;
 }
 
+.gynSettings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gynInfo {
+  margin: 5%;
+}
+
+.gynCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gynService {
+  margin: 5%;
+}
+
 .obsMain {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .obsImg {
   border-radius: 15px;
+  width: 40%;
+  height: 40%;
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -185,8 +209,8 @@ body footer {
 }
 
 iframe {
-  width: 300px !important;
-  height: 300px !important;
+  width: 450px !important;
+  height: 450px !important;
 }
 
 .contactDetail {
@@ -195,7 +219,7 @@ iframe {
   height: 4em;
   padding: 1em;
   font-size: 15px;
-  background-color: rgb(243, 233, 241);
+  margin-bottom: -5px;
 }
 
 /*# sourceMappingURL=main.css.map */
