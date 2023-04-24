@@ -160,6 +160,9 @@ body footer {
   .obsImg {
     width: 80%;
   }
+  .forMobil {
+    width: 100%;
+  }
   .footer_redes {
     flex-direction: row;
   }
