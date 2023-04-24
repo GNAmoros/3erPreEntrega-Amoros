@@ -1,0 +1,71 @@
+@media screen and (max-width: 480px){
+    #homeGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer";
+    }
+    .mainTitle{
+        top:-50%;
+        left:30%;
+        width: 80%;
+    }
+    .freyja_logo {
+        display: block;
+        margin: auto;
+        position: absolute;
+      }
+    .mainNav{
+        flex-direction: row;
+        justify-content: center;
+        gap:0;
+        margin-top: -1rem;
+        position: absolute;
+    }
+    .infoMain{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .indexpic1{
+        width: 80%;
+        height: auto;
+        margin: 2rem;
+    }
+    .indexpic2{
+        width: 80%;
+        height: auto;
+        margin: 2rem;
+    }
+    
+    .mobilText{
+        text-align: justify;
+    }
+
+    .caroMobil{
+        display: none;
+    }
+
+    .cardsMobil{
+        display: block;
+    }
+
+    .obsImg{
+        width: 80%;
+    }
+    .footer_redes{
+        flex-direction: row;;
+    }
+}
+
+@media (min-width: 481px) {
+    .caroMobil {
+      display: block;
+    }
+    .cardsMobil {
+      display: none;
+    }
+  }
