@@ -26,12 +26,7 @@
         flex-direction: column;
     }
     
-    .indexpic1{
-        width: 80%;
-        height: auto;
-        margin: 2rem;
-    }
-    .indexpic2{
+    .indexPic{
         width: 80%;
         height: auto;
         margin: 2rem;
@@ -42,9 +37,9 @@
         font-size: 16px;
     }
 
-    .caroMobil{
-        display: none;
-    }
+    // .caroMobil{
+    //     display: none;
+    // }
 
     .cardsMobil{
         display: block;
@@ -52,6 +47,10 @@
 
     .obsImg{
         width: 80%;
+    }
+
+    .list-group{
+        width: 90%;
     }
 
     .forMobil{
@@ -70,11 +69,16 @@
         & iframe{
             width: 20em;
             height: 20em;
+            margin-left: 7%;
         }
     }
 
     .contactDetail{
         font-size: .7em;
+    }
+
+    .mobilError{
+        width: 100%;
     }
 
     .footer_redes{
