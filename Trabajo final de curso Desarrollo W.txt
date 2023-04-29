@@ -1,0 +1,16 @@
+Trabajo final de curso "Desarrollo Web"
+
+Para este trabajo se tomo proyecto en progreso de Clinica que se encuentra actualmente en desarrollo por 3 doctores con especialidad en Gineco-Obstetricia.
+
+Para el mismo se implemento lo aprendido durante la cursada de "Desarrollo Web" dictado por CoderHouse:
+
+SASS: -Partials: uno por pagina, ademas de los necesarios para organizar el contenido.
+      -Nesting: se aplica para aplicar lo dictado por Laura Avalle para estructurar los html
+	-@Import: se importan dentro de "main.scss" los partials teniendo en cuenta el orden correcto de los mismos.
+	-Se elimina el CSS "stylesheet.css"
+
+SEO:  -ALT=""; todas las imagenes cuentan con su texto alternativo
+	-Metas: "description": cada pagina cuenta con su descripsion
+		  "title" todas las paginas cuenta con el titulo correspondiente 
+
+Responsive: se hizo uso de Bootstrap para la navbar, y de esta forma lograr que sea responsive
