@@ -8,6 +8,15 @@
   padding: 0px !important;
 }
 
+.glasStyle {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .one {
   background-color: rgb(192, 130, 167);
 }
@@ -26,13 +35,15 @@
 
 header {
   background-image: url(../img/header.webp);
+  background-size: cover;
+  width: 91vw;
 }
 header h1 {
   font-family: "Satisfy", cursive;
-  font-size: 7em;
+  font-size: 6em;
   position: relative;
   top: -50%;
-  margin-left: 25%;
+  margin-left: 35%;
 }
 
 p {
@@ -40,6 +51,10 @@ p {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
+body {
+  background: #ECE9E6; /* fallback for old browsers */
+  background: linear-gradient(to bottom, rgba(216, 202, 165, 0.7254901961), #e6e1dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 body div nav {
   background-color: rgb(192, 130, 167);
 }
@@ -83,10 +98,9 @@ body main article {
 }
 body main article img {
   border-radius: 20px;
-  margin: 2em 8em;
 }
 body main article p {
-  margin: 2em;
+  margin: 2em 4em;
 }
 body main section form {
   display: flex;
@@ -103,6 +117,7 @@ body footer {
   background-color: rgb(192, 130, 167);
   padding-top: 5px;
 }
+
 .infoPages {
   display: flex;
   flex-direction: column;
@@ -111,59 +126,6 @@ body footer {
   align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  .mainTitle {
-    top: -50%;
-    margin-left: 3%;
-    font-size: 5rem;
-  }
-  .freyja_logo {
-    display: block;
-    margin: auto;
-    position: absolute;
-  }
-  .infoMain {
-    display: flex;
-    flex-direction: column;
-  }
-  .indexpic1 {
-    width: 80%;
-    height: auto;
-    margin: 2rem;
-  }
-  .indexpic2 {
-    width: 80%;
-    height: auto;
-    margin: 2rem;
-  }
-  .mobilText {
-    text-align: justify;
-    font-size: 16px;
-  }
-  .caroMobil {
-    display: none;
-  }
-  .cardsMobil {
-    display: block;
-  }
-  .obsImg {
-    width: 80%;
-  }
-  .forMobil {
-    width: 100%;
-  }
-  .footer_redes {
-    flex-direction: row;
-  }
-}
-@media (min-width: 481px) {
-  .caroMobil {
-    display: block;
-  }
-  .cardsMobil {
-    display: none;
-  }
-}
 .aesCarous {
   grid-area: caro;
 }
@@ -207,8 +169,18 @@ body footer {
 }
 
 .obsIntro {
-  width: 20rem;
+  width: 24rem;
   margin: 6%;
+  text-align: center;
+}
+
+.list-group {
+  margin-bottom: 2em;
+}
+
+.list-group-item {
+  background-color: rgb(243, 233, 241);
+  border: 1px outset;
 }
 
 .contactSettings {
@@ -243,6 +215,7 @@ body footer {
   padding: 1rem;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(243, 233, 241);
 }
 
 .contactInput {
@@ -262,8 +235,8 @@ body footer {
 }
 
 iframe {
-  width: 450px !important;
-  height: 450px !important;
+  width: 450px;
+  height: 450px;
 }
 
 .contactDetail {
@@ -273,6 +246,84 @@ iframe {
   padding: 1em;
   font-size: 15px;
   margin-bottom: -5px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+  }
+  header .mainTitle {
+    top: -50%;
+    margin-left: 3%;
+    font-size: 4rem;
+  }
+  header .mainTitlePages {
+    top: -50%;
+    left: 10%;
+    font-size: 4rem;
+  }
+  .freyja_logo {
+    display: block;
+    margin: auto;
+    position: absolute;
+  }
+  .infoMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .indexpic1 {
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+  }
+  .indexpic2 {
+    width: 80%;
+    height: auto;
+    margin: 2rem;
+  }
+  .mobilText {
+    text-align: justify;
+    font-size: 16px;
+  }
+  .caroMobil {
+    display: none;
+  }
+  .cardsMobil {
+    display: block;
+  }
+  .obsImg {
+    width: 80%;
+  }
+  .forMobil {
+    width: 100%;
+  }
+  .contactInfo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contactMap {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .contactMap iframe {
+    width: 20em;
+    height: 20em;
+  }
+  .contactDetail {
+    font-size: 0.7em;
+  }
+  .footer_redes {
+    flex-direction: row;
+  }
+}
+@media (min-width: 481px) {
+  .caroMobil {
+    display: block;
+  }
+  .cardsMobil {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

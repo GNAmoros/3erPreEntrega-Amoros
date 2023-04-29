@@ -30,6 +30,7 @@
     padding: 1rem;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(243,233,241);
 }   
 .contactInput{
     background-color: rgb(214,193,207);
@@ -44,8 +45,8 @@
     margin: 5px;
 }
 iframe{
-    width: 450px !important;
-    height: 450px !important;
+    width: 450px;
+    height: 450px; 
 }
 .contactDetail{
     order: 3;

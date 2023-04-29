@@ -1,10 +1,20 @@
 @media screen and (max-width: 480px){
 
-    .mainTitle{
-        top:-50%;
-        margin-left: 3%;
-        font-size: 5rem;
+    header{
+        width: 100vw;
+        .mainTitle{
+            top:-50%;
+            margin-left: 3%;
+            font-size: 4rem;
+        }
+    
+        .mainTitlePages{
+            top:-50%;
+            left: 10%;
+            font-size: 4rem;
+        }
     }
+
     .freyja_logo {
         display: block;
         margin: auto;
@@ -44,12 +54,31 @@
         width: 80%;
     }
 
-.forMobil{
-    width: 100%;
-}
+    .forMobil{
+        width: 100%;
+    }
+
+    .contactInfo{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .contactMap{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        & iframe{
+            width: 20em;
+            height: 20em;
+        }
+    }
+
+    .contactDetail{
+        font-size: .7em;
+    }
 
     .footer_redes{
-        flex-direction: row;;
+        flex-direction: row;
     }
 }
 

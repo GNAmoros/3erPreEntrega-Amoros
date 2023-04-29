@@ -1,12 +1,14 @@
 header{
     background-image: url(../img/header.webp);
+    background-size: cover;
+    width: 91vw;
     h1{
-    font-family: $mainFont;
-    font-size: $txtlg;
-    position:relative; 
-    top:-50%;
-    margin-left: 25%;
-}
+        font-family: $mainFont;
+        font-size: $txtlg;
+        position:relative; 
+        top:-50%;
+        margin-left: 35%;
+    }
 }
 
 p{
@@ -15,6 +17,8 @@ p{
 }
 
 body{
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: linear-gradient(to bottom, #d8caa5b9, #e6e1dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     div{
         nav{
             background-color: rgb(192,130,167);
@@ -62,10 +66,10 @@ body{
             justify-items: center;
             img{
                 border-radius: 20px;
-                margin: 2em 8em;
+                // margin: 2em 1em;
             }
             p{
-                margin: 2em;
+                margin: 2em 4em;
             }
         }
         section{
@@ -85,8 +89,6 @@ body{
     footer{
         background-color: rgb(192,130,167);
         padding-top: 5px;
-        section{
-        }
     }
     }
     

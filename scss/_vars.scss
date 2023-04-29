@@ -3,7 +3,7 @@
 // fonts
 $mainFont: 'Satisfy', cursive;
 $sndFont: 'Montserrat Alternates', sans-serif;
-$txtlg: 7em;
+$txtlg: 6em;
 $txtmd: 2em;
 $txtint: 1.8em;
 $txtsm: 1.4em;
@@ -11,4 +11,13 @@ $txtsm: 1.4em;
 
 .flui{
     padding: 0px !important
+}
+
+.glasStyle{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
